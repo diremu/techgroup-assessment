@@ -1,0 +1,47 @@
+/* variable setup for ease of use */
+:root {
+  --ink: #131a2b;
+  --ink-soft: #37415a;
+  --paper: #f0f1ec;
+  --paper-raised: #ffffff;
+  --line: rgba(19, 26, 43, 0.12);
+  --amber: #e8a33d;
+  --amber-dark: #c77f1f;
+  --teal: #3e8e82;
+
+  --font-display: "Bricolage Grotesque", "Arial Narrow", sans-serif;
+  --font-body: "IBM Plex Sans", Arial, sans-serif;
+
+  --wrap: 1140px;
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --shadow-card: 0 1px 0 var(--line);
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
