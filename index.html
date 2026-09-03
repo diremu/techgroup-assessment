@@ -11,28 +11,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <link
-      href="/assets/BricolageGrotesque_24pt-Regular.ttf"
-      rel="stylesheet"
-    />
+    <link href="/assets/BricolageGrotesque_24pt-Regular.ttf" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="wrap header-inner">
         <a href="#top" class="brand">
-          <img src="assets/techbridge-logo.png" alt="TechBridge Logo" width="150" height="150" />
+          <img
+            src="assets/techbridge-logo.png"
+            alt="TechBridge Logo"
+            width="150"
+            height="150"
+          />
         </a>
 
-        <button
-          class="nav-toggle"
+        <input
+          class="nav-toggle-input"
+          type="checkbox"
           id="navToggle"
-          aria-expanded="false"
-          aria-controls="siteNav"
-        >
+          aria-label="Toggle navigation menu"
+        />
+
+        <label class="nav-toggle" for="navToggle" aria-label="Open menu">
           <span></span><span></span><span></span>
           <span class="sr-only">Menu</span>
-        </button>
+        </label>
 
         <nav class="site-nav" id="siteNav">
           <a href="#about">About</a>
@@ -42,7 +46,7 @@
           <a href="#contact">Contact</a>
           <a
             class="nav-cta"
-            href="https://forms.gle/"
+            href="https://forms.gle/8EbdSy5ttGfLZfjv5?utm_source=chatgpt.com"
             target="_blank"
             rel="noopener"
             >Apply now</a
@@ -56,17 +60,18 @@
       <section class="hero" id="top">
         <div class="wrap hero-grid">
           <div class="hero-copy">
-            <p class="kicker"><span class="hero-title">Tech</span><span class="hero-title">Bridge</span> by Baselink Services Limited</p>
+            <p class="kicker">
+              TechBridge by Baselink Services
+              Limited
+            </p>
             <h1>
-              Bridging learning<br />
-              to real&#8209;world experience.
+              "Bridging learning<br />
+              to real&#8209;world experience."
             </h1>
             <p class="hero-lede">
               TechBridge turns classroom-ready skills into portfolio-ready work.
-              We run practical, mentor-guided programs in
-              <strong>Data Analytics</strong> and
-              <strong>Web Development</strong>, capped off with a hands-on
-              internship, all so you can learn the best way possible.
+              We run practical, mentor-guided programs capped off with a
+              hands-on internship, all so you can learn the best way possible.
             </p>
           </div>
 
@@ -81,9 +86,7 @@
               <circle class="span-node span-node-mid" cx="210" cy="130" r="6" />
             </svg>
             <div class="span-label span-label-left">Learning</div>
-            <div class="span-label span-label-right">
-              Real-world experience
-            </div>
+            <div class="span-label span-label-right">Real-world experience</div>
           </div>
         </div>
       </section>
@@ -93,16 +96,22 @@
           <div class="about-body">
             <p>
               TechBridge is a practical training initiative by
-              <strong>Baselink Services Limited</strong>, built for people who
-              already know the theory and want the experience that usually only
-              comes after you've been hired. Instead of another set of lectures,
-              you work on real, structured projects with guidance from people
-              who've done the job — and walk away with something to show for it.
+              <strong>Baselink Services Limited</strong>, built for students,
+              graduates and career-switchers looking for a landing. Instead of
+              another set of lectures, you work on real, structured projects
+              with guidance from people who've done the job — and walk away with
+              something to show for it.
             </p>
             <p>
               Our current programs sit in two of the most in-demand technical
               skill areas today, and every program leads toward the same thing:
               a chance to apply what you've learned inside a real internship.
+            </p>
+            <p>
+              Our goal is to help you bridge the gap between learning and
+              real-world experience, so you can confidently step into your next
+              role. With us, there are no more imposters in the room. Just
+              professionals ready to deliver.
             </p>
           </div>
         </div>
@@ -111,9 +120,12 @@
       <section class="programs" id="programs">
         <div class="wrap">
           <div class="section-head">
-            <h2>Programs</h2>
+            <h2>Current Programs</h2>
             <p>
-              We have two programs currently catering to what we perceive will be the most in-demand technical skill areas tomorrow. Each program is designed to leave you with both the skills and the know-how to apply them in a real-world evnironment.
+              We currently have two programs currently to what we perceive will
+              be the most in-demand technical skill areas tomorrow. Each program
+              is designed to leave you with both the skills and the know-how to
+              apply them in a real-world environment.
             </p>
           </div>
 
@@ -184,13 +196,15 @@
               href="https://forms.gle/8EbdSy5ttGfLZfjv5?utm_source=chatgpt.com"
               target="_blank"
               rel="noopener"
-              >Start your application</a
+              >Start now</a
             >
           </div>
           <div class="internship-figure" aria-hidden="true">
             <div class="day-counter">
               <span class="day-counter-number">30</span>
-              <span class="day-counter-label">days of hands on development</span>
+              <span class="day-counter-label"
+                >days of hands on development</span
+              >
             </div>
           </div>
         </div>
@@ -198,9 +212,9 @@
 
       <section class="apply-band" id="apply">
         <div class="wrap apply-band-inner">
-          <h2>Ready to bridge the gap?</h2>
+          <h2>Ready to apply?</h2>
           <p>
-            Don't wait for whenever you feel ready. Take the leap now and start with us.
+            Applications are reviewed on a rolling basis. Fill in the official TechBridge form to get started - it only takes a few minutes.
           </p>
           <a
             class="btn btn-primary btn-lg"
@@ -226,8 +240,13 @@
               href="https://chat.whatsapp.com/FqpBvYS4oaK32cXDxc8JIS"
               target="_blank"
               rel="noopener"
-              >Join Us on WhatsApp <img src="/assets/whatsapp.svg" alt="WhatsApp" height="20" width="20"/></a
-            >
+              >Join Us on WhatsApp
+              <img
+                src="/assets/whatsapp.svg"
+                alt="WhatsApp"
+                height="20"
+                width="20"
+            /></a>
           </div>
         </div>
       </section>
@@ -240,8 +259,9 @@
             team directly.
           </p>
           <a class="contact-email" href="mailto:techbridgebaslink@gmail.com"
-            >techbridgebaslink@gmail.com <img src="/assets/email.svg" alt="Mail" height="20" width="20    " /></a
-          >
+            >techbridgebaslink@gmail.com
+            <img src="/assets/email.svg" alt="Mail" height="20" width="20    "
+          /></a>
         </div>
       </section>
     </main>
@@ -249,7 +269,7 @@
     <footer class="site-footer">
       <div class="wrap footer-inner">
         <div class="footer-brand">
-          <img src="assets/techbridge-logo.png" width="200" alt="TechBridge"/>
+          <img src="assets/techbridge-logo.png" width="200" alt="TechBridge" />
           <p>
             Bridging Learning to Real-World Experience.<br />A program by
             Baselink Services Limited.
@@ -267,11 +287,20 @@
 
         <div class="footer-contact">
           <a href="mailto:techbridgebaslink@gmail.com"
-            >Mail<img src="/assets/email.svg" alt="Gmail" height="30" width="30"/></a
-          >
+            >Mail<img
+              src="/assets/email.svg"
+              alt="Gmail"
+              height="30"
+              width="30"
+          /></a>
           <a href="https://chat.whatsapp.com/" target="_blank" rel="noopener"
-            >WhatsApp Community <img src="/assets/whatsapp.svg" alt="WhatsApp" height="20" width="20"/></a
-          >
+            >WhatsApp Community
+            <img
+              src="/assets/whatsapp.svg"
+              alt="WhatsApp"
+              height="20"
+              width="20"
+          /></a>
         </div>
       </div>
       <div class="wrap footer-bottom">

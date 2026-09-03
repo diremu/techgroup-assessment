@@ -135,6 +135,7 @@ p {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0.85rem 1.5rem;
   border-radius: var(--radius-sm);
@@ -144,6 +145,8 @@ p {
   text-decoration: none;
   text-align: center;
   border: 1.5px solid transparent;
+  white-space: nowrap;
+  width: fit-content;
   transition:
     transform 0.15s ease,
     background 0.15s ease,
@@ -227,6 +230,12 @@ p {
   color: var(--ink) !important;
 }
 
+.nav-toggle-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -237,6 +246,8 @@ p {
   background: none;
   border: none;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 .nav-toggle span {
   display: block;
@@ -418,6 +429,7 @@ p {
 .internship-copy{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .internship-points {
@@ -621,9 +633,11 @@ p {
     padding: 0.5rem 1.5rem 1.2rem;
     display: none;
   }
-  .site-nav.is-open {
+
+  .nav-toggle-input:checked ~ .site-nav {
     display: flex;
   }
+
   .site-nav a {
     padding: 0.75rem 0;
     border-bottom: 1px solid var(--line);
