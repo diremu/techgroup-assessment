@@ -1,0 +1,50 @@
+[
+  {
+    "number": 1,
+    "title": "TechBridge Homepage",
+    "description": "The first version of the TechBridge website — hero, about, programs teaser, internship band, community and contact sections.",
+    "status": "completed"
+  },
+  {
+    "number": 2,
+    "title": "TechBridge Programs Experience",
+    "description": "A dedicated Programs page covering the Data Analytics and Web Development tracks, with skills and a clear differentiation between the two.",
+    "status": "completed"
+  },
+  {
+    "number": 3,
+    "title": "Internship Tasks Experience",
+    "description": "A page walking through the 8-task, 30-day internship journey with day and difficulty progression.",
+    "status": "completed"
+  },
+  {
+    "number": 4,
+    "title": "Interactive Internship Roadmap",
+    "description": "Turned the tasks page into a two-track switcher — Data Analytics vs. Web Development — powered by vanilla JavaScript.",
+    "status": "completed"
+  },
+  {
+    "number": 5,
+    "title": "Challenge Hub",
+    "description": "A browsable set of practical challenges across both tracks, filterable by track and difficulty.",
+    "status": "completed"
+  },
+  {
+    "number": 6,
+    "title": "Intern Dashboard",
+    "description": "This page — progress tracking, an interactive task tracker, a Challenge Hub connector, and a technology explorer.",
+    "status": "completed"
+  },
+  {
+    "number": 7,
+    "title": "Task Submission System",
+    "description": "An interface for interns to prepare and submit completed task work.",
+    "status": "in-progress"
+  },
+  {
+    "number": 8,
+    "title": "Complete TechBridge Platform",
+    "description": "Combine everything built during the internship into one complete, connected TechBridge platform.",
+    "status": "not-started"
+  }
+]
