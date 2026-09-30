@@ -219,6 +219,21 @@ document.getElementById("techButtons").addEventListener("click", (event) => {
   if (btn) renderTechPanel(btn.dataset.tech);
 });
 
+let searchBar = document.getElementById('searchBar')
+searchBar.addEventListener('keyup', e => {
+  let currentValue = e.target.value.toLowerCase()
+  let tasks = [...dashboardTasks]
+  let result = []
+  for (let i = 0; i < tasks.length; i++) {
+    let name = tasks[i].title.toLowerCase()
+    if (name.includes(currentValue.toLowerCase())) {
+      result.push(tasks[i])
+    }
+  }
+  renderTasks(result)
+  return;
+})
+
 renderTechPanel("nextjs");
 handleUserStatus();
 loadTasks();

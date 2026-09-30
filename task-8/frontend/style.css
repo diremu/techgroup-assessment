@@ -1,4 +1,3 @@
-/* variable setup for ease of use */
 @font-face {
   font-family: "Bricolage Grotesque";
   src: url("/assets/BricolageGrotesque_24pt-Regular.ttf") format("truetype");
@@ -613,10 +612,6 @@ p {
   color: rgba(240, 241, 236, 0.5);
 }
 
-/* ============================================================
-   Programs page (Task 2)
-   ============================================================ */
-
 .page-hero {
   padding: 4rem 0 3rem;
   border-bottom: 1px solid var(--line);
@@ -872,10 +867,6 @@ p {
   }
 }
 
-/* ============================================================
-   Internship Tasks page (Task 3) + Roadmap (Task 4)
-   ============================================================ */
-
 .see-tasks-link {
   margin-top: 1.1rem;
   font-size: 0.92rem;
@@ -1112,10 +1103,6 @@ p {
   animation: taskFadeIn 0.3s ease both;
 }
 
-/* ============================================================
-   Challenge Hub (Task 5)
-   ============================================================ */
-
 .challenge-filter {
   display: flex;
   flex-wrap: wrap;
@@ -1173,10 +1160,6 @@ p {
   }
 }
 
-/* ============================================================
-   Intern Dashboard (Task 6)
-   ============================================================ */
-
 .dashboard-welcome .badge {
   margin-top: 0.4rem;
 }
@@ -1219,9 +1202,6 @@ p {
   font-weight: 600;
 }
 
-/* Reuse .track-btn for filter/tech buttons; give filter-btn/tech-btn a
-   neutral active state distinct from the track-switcher's teal/amber
-   track-specific colors. */
 .filter-btn.is-active,
 .tech-btn.is-active {
   background: var(--ink);
@@ -1311,6 +1291,51 @@ p {
   background: var(--paper);
   border: 1px solid var(--line);
   color: var(--ink-soft);
+}
+
+.dashboard-link {
+  display: flex;
+  justify-content: center;
+  padding: 4.5rem 0 3.5rem;
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+.dashboard-btn {
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    margin: 2px;
+    font-weight: bold;
+  }
+  background-color: #131a2b;
+  border: none;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.hero-dashboard {
+  display: flex;
+  justify-content: center;
+  margin: 4.5rem 0 3.5rem;
+}
+
+.challenge-search {
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--paper-raised);
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  min-width: 200px;
 }
 
 @media (max-width: 480px) {

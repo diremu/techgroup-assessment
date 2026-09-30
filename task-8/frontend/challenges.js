@@ -159,7 +159,6 @@ function getChallenges() {
   let course = document.getElementById("challenge-course")
   let diff = document.getElementById('track-diff')
   let results = []
-  console.log(course.value)
   if (course.value === 'data-analysis') {
     results = challenges.filter((val) => val.track === 'data-analysis')
     console.log(results)
@@ -223,4 +222,20 @@ let trackSelect = document.getElementById("challenge-course")
 trackSelect.addEventListener('change', returnList)
 let diffSelect = document.getElementById("track-diff")
 diffSelect.addEventListener('change', returnList)
+
+let searchBar = document.getElementById('searchBar')
+searchBar.addEventListener('keyup', e => {
+  console.log(e.target.value)
+  let currentValue = e.target.value.toLowerCase()
+  let challenges = getChallenges()
+  let result = []
+  for (let i = 0; i < challenges.length; i++) {
+    let name = challenges[i].name.toLowerCase()
+    if (name.includes(currentValue.toLowerCase())) {
+      result.push(challenges[i])
+    }
+  }
+  renderChallenges(result)
+  return;
+})
 returnList()
