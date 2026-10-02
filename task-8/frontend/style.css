@@ -823,7 +823,7 @@ p {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 801px) {
   .nav-toggle {
     display: flex;
   }
